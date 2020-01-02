@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
+</head>
+
+<!-- main -->
+<form>
+From:
+<select id="from_station" onchange="changed_station_select(this)" title="Start station">
+</select>
+Destination:
+<select id="dest_station" onchange="changed_station_select(this)" title="Final Destination station">
+    
+</select>
+</form>
+
+<table border="1" id="table_train">
+    <tr>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+    <th>Delay</th>
+    <th>Time left</th>
+    </tr>
+</table>
+
+Time till next update: <div id="update_next">0</div>
+
+<!-- End main -->
+
+<script src="rail.js"></script>
+
+
+</body>
+</html>
